@@ -37,6 +37,6 @@ container.addEventListener("click", () => {
       const tile = clickedTiles.shift();
       tile.classList.remove("selected");
       if (clickedTiles.length === 0) clearInterval(interval);
-    }, 700);
+    }, 400);
   }
 });
