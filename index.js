@@ -32,6 +32,9 @@ container.addEventListener("click", () => {
   event.target.classList.add("selected");
   clickedTiles.push(event.target);
 
+  // when all the tiles clicked, remove the "selected" class from tile and,
+  // remove tile from clickedTiles array
+
   if (clickedTiles.length >= rows * columns) {
     const interval = setInterval(() => {
       const tile = clickedTiles.shift();
