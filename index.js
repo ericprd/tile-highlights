@@ -4,10 +4,10 @@ const container = document.getElementById("container");
 
 // create element function
 
-function createElement(elm, cls, parrent) {
+function createElement(elm, cls, ParentNode) {
   const element = document.createElement(elm);
   element.classList.add(cls);
-  parrent.appendChild(element);
+  ParentNode.appendChild(element);
 }
 
 const rows = 3;
