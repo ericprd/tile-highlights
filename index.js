@@ -26,7 +26,7 @@ for (let row = 0; row < rows; row++) {
 
 const clickedTiles = [];
 
-container.addEventListener("click", () => {
+container.addEventListener("click", (event) => {
   if (!event.target.classList.contains("tile")) return;
   if (clickedTiles.includes(event.target)) return;
   event.target.classList.add("selected");
