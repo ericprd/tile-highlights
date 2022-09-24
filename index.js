@@ -13,14 +13,14 @@ function createElement(elm, cls, ParentNode) {
 const rows = 3;
 const columns = 3;
 
-for (let i = 0; i < rows; i++) {
+for (let row = 0; row < rows; row++) {
   // create wrapper elements
   createElement("div", "wrapper", container);
   const wrapper = document.querySelectorAll(".wrapper");
 
-  for (let j = 0; j < columns; j++) {
+  for (let column = 0; column < columns; column++) {
     // create tile elements
-    createElement("div", "tile", wrapper[i]);
+    createElement("div", "tile", wrapper[row]);
   }
 }
 
