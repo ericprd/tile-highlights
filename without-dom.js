@@ -17,16 +17,6 @@ const revertTileColor = (tileRow, tileColumn) => {
   console.log(tiles);
 };
 
-changeTileColor(0, 1);
-changeTileColor(2, 2);
-changeTileColor(1, 0);
-changeTileColor(0, 2);
-changeTileColor(1, 2);
-changeTileColor(2, 0);
-changeTileColor(1, 1);
-changeTileColor(0, 0);
-changeTileColor(2, 1);
-
 console.log();
 
 let play = confirm("Let's start the game");
