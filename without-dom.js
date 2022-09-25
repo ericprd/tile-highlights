@@ -7,9 +7,15 @@ const tiles = [
 const selectedTilesIndex = [];
 
 const changeTileColor = (tileRow, tileColumn) => {
-  tiles[tileRow][tileColumn] = "⬛";
-  selectedTilesIndex.push([tileRow, tileColumn]);
-  console.log(tiles);
+  if (tileRow > 2 || tileColumn > 2) {
+    console.log("Row or column is exceeds the limit");
+  } else if (typeof tileRow === "number" && typeof tileColumn === "number") {
+    tiles[tileRow][tileColumn] = "⬛";
+    selectedTilesIndex.push([tileRow, tileColumn]);
+    console.log(tiles);
+  } else {
+    console.log("Row or column is not valid");
+  }
 };
 
 const revertTileColor = (tileRow, tileColumn) => {
